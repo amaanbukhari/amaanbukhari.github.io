@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amaan Bukhari</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Space+Mono&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'DM Mono', monospace;
-      background: #f5f5f3;
+      font-family: 'Space Mono', monospace;
+      background: #141312;
       min-height: 100vh;
       display: flex;
       align-items: flex-start;
@@ -29,40 +29,41 @@
       width: 72px;
       height: 72px;
       border-radius: 50%;
-      background: #1F4E79;
+      background: #252320;
+      border: 1.5px solid #C4ABEE;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Syne', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 22px;
-      font-weight: 700;
-      color: #fff;
+      font-weight: 600;
+      color: #C4ABEE;
       margin: 0 auto 1rem;
     }
 
     .name {
-      font-family: 'Syne', sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      color: #1a1a1a;
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #F7F6F5;
       text-align: center;
       margin-bottom: 4px;
     }
 
     .title {
-      font-size: 11px;
-      color: #888;
+      font-size: 10px;
+      color: #9A9590;
       text-align: center;
-      letter-spacing: 0.09em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       margin-bottom: 2rem;
     }
 
     .divider {
-      font-size: 10px;
-      color: #aaa;
+      font-size: 9px;
+      color: #615D59;
       text-align: center;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       margin: 1.2rem 0 0.8rem;
     }
@@ -71,19 +72,19 @@
       display: flex;
       align-items: center;
       gap: 14px;
-      background: #fff;
-      border: 1px solid #e8e8e5;
+      background: #252320;
+      border: 1px solid #2e2c29;
       border-radius: 12px;
       padding: 14px 18px;
       margin-bottom: 10px;
       text-decoration: none;
-      color: #1a1a1a;
+      color: #D5D2CE;
       transition: border-color 0.15s, background 0.15s, transform 0.1s;
     }
 
     .link:hover {
-      border-color: #bbb;
-      background: #fafaf8;
+      border-color: #C4ABEE;
+      background: #2a2826;
       transform: translateY(-1px);
     }
 
@@ -98,18 +99,40 @@
       justify-content: center;
       flex-shrink: 0;
       font-size: 17px;
+      overflow: hidden;
+    }
+
+    .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 9px;
     }
 
     .text { flex: 1; }
-    .label { font-size: 13px; font-weight: 500; display: block; color: #1a1a1a; }
-    .sub { font-size: 11px; color: #888; display: block; margin-top: 2px; }
-    .arrow { color: #ccc; font-size: 13px; }
+
+    .label {
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      display: block;
+      color: #F7F6F5;
+    }
+
+    .sub {
+      font-size: 10px;
+      color: #615D59;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .arrow { color: #615D59; font-size: 13px; }
 
     .ic-li { background: #0A66C2; color: #fff; }
-    .ic-gh { background: #24292e; color: #fff; }
+    .ic-gh { background: #3a3f44; color: #D5D2CE; }
     .ic-em { background: #EA4335; color: #fff; }
-    .ic-pr { background: #E6F4EA; color: #1e7e34; font-size: 15px; }
-    .ic-re { background: #7b2ff7; color: #fff; font-size: 15px; }
+    .ic-re { background: #8B5CF6; color: #fff; font-size: 15px; }
+    .ic-pr { background: #1e1c1a; border: 1px solid #C4ABEE; }
   </style>
 </head>
 <body>
@@ -150,7 +173,7 @@
     <p class="divider">Work &amp; Resume</p>
 
     <a class="link" href="https://pristia.net" target="_blank" rel="noopener">
-      <div class="icon ic-pr"><i class="fa-solid fa-building"></i></div>
+      <div class="icon ic-pr"><img src="pristia-icon.jpg" alt="Pristia Group" /></div>
       <div class="text">
         <span class="label">Pristia Group</span>
         <span class="sub">pristia.net</span>
