@@ -1,76 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amaan Bukhari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@600;700&display=swap');
-  .lb-wrap { max-width: 420px; margin: 2rem auto; padding: 0 1rem; font-family: 'DM Mono', monospace; }
-  .lb-avatar { width: 72px; height: 72px; border-radius: 50%; background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); display: flex; align-items: center; justify-content: center; font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; color: var(--color-text-primary); margin: 0 auto 1rem; }
-  .lb-name { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; color: var(--color-text-primary); text-align: center; margin: 0 0 4px; }
-  .lb-title { font-size: 12px; color: var(--color-text-secondary); text-align: center; margin: 0 0 2rem; letter-spacing: 0.08em; text-transform: uppercase; }
-  .lb-link { display: flex; align-items: center; gap: 14px; background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 14px 18px; margin-bottom: 10px; text-decoration: none; color: var(--color-text-primary); transition: border-color 0.15s, background 0.15s; cursor: pointer; }
-  .lb-link:hover { border-color: var(--color-border-primary); background: var(--color-background-secondary); }
-  .lb-icon { width: 36px; height: 36px; border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  .lb-icon i { font-size: 18px; }
-  .lb-text { flex: 1; }
-  .lb-label { font-size: 13px; font-weight: 500; color: var(--color-text-primary); display: block; }
-  .lb-sub { font-size: 11px; color: var(--color-text-secondary); display: block; margin-top: 2px; }
-  .lb-arrow { color: var(--color-text-tertiary); font-size: 14px; }
-  .ic-li { background: #E8F0FE; } .ic-li i { color: #1a73e8; }
-  .ic-gh { background: var(--color-background-secondary); } .ic-gh i { color: var(--color-text-primary); }
-  .ic-em { background: #FEF3E2; } .ic-em i { color: #EA8600; }
-  .ic-pr { background: #E6F4EA; } .ic-pr i { color: #1e7e34; }
-  .ic-re { background: #F3E8FD; } .ic-re i { color: #7b2ff7; }
-  .lb-divider { font-size: 10px; color: var(--color-text-tertiary); text-align: center; letter-spacing: 0.1em; text-transform: uppercase; margin: 1.2rem 0 0.8rem; }
-</style>
-<div class="lb-wrap">
-  <div class="lb-avatar">AB</div>
-  <p class="lb-name">Amaan Bukhari</p>
-  <p class="lb-title">IT &amp; Cybersecurity · CompTIA Sec+ · NJIT '26</p>
+    body {
+      font-family: 'DM Mono', monospace;
+      background: #f5f5f3;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 3rem 1rem 4rem;
+    }
 
-  <div class="lb-divider">Connect</div>
+    .wrap {
+      width: 100%;
+      max-width: 420px;
+    }
 
-  <a class="lb-link" href="https://www.linkedin.com/in/amaanbukhari/" target="_blank">
-    <div class="lb-icon ic-li"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></div>
-    <div class="lb-text">
-      <span class="lb-label">LinkedIn</span>
-      <span class="lb-sub">linkedin.com/in/amaanbukhari</span>
-    </div>
-    <i class="ti ti-arrow-right lb-arrow" aria-hidden="true"></i>
-  </a>
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #1F4E79;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      margin: 0 auto 1rem;
+    }
 
-  <a class="lb-link" href="mailto:amaanjbukhari@gmail.com">
-    <div class="lb-icon ic-em"><i class="ti ti-mail" aria-hidden="true"></i></div>
-    <div class="lb-text">
-      <span class="lb-label">Email</span>
-      <span class="lb-sub">amaanjbukhari@gmail.com</span>
-    </div>
-    <i class="ti ti-arrow-right lb-arrow" aria-hidden="true"></i>
-  </a>
+    .name {
+      font-family: 'Syne', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a1a1a;
+      text-align: center;
+      margin-bottom: 4px;
+    }
 
-  <a class="lb-link" href="https://github.com/amaanbukhari" target="_blank">
-    <div class="lb-icon ic-gh"><i class="ti ti-brand-github" aria-hidden="true"></i></div>
-    <div class="lb-text">
-      <span class="lb-label">GitHub</span>
-      <span class="lb-sub">github.com/amaanbukhari</span>
-    </div>
-    <i class="ti ti-arrow-right lb-arrow" aria-hidden="true"></i>
-  </a>
+    .title {
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
 
-  <div class="lb-divider">Work &amp; Resume</div>
+    .divider {
+      font-size: 10px;
+      color: #aaa;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin: 1.2rem 0 0.8rem;
+    }
 
-  <a class="lb-link" href="https://pristia.net" target="_blank">
-    <div class="lb-icon ic-pr"><i class="ti ti-building" aria-hidden="true"></i></div>
-    <div class="lb-text">
-      <span class="lb-label">Pristia Group</span>
-      <span class="lb-sub">IT services · pristia.net</span>
-    </div>
-    <i class="ti ti-arrow-right lb-arrow" aria-hidden="true"></i>
-  </a>
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #fff;
+      border: 1px solid #e8e8e5;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: border-color 0.15s, background 0.15s, transform 0.1s;
+    }
 
-  <a class="lb-link" href="#" target="_blank">
-    <div class="lb-icon ic-re"><i class="ti ti-file-cv" aria-hidden="true"></i></div>
-    <div class="lb-text">
-      <span class="lb-label">Resume</span>
-      <span class="lb-sub">Download PDF</span>
-    </div>
-    <i class="ti ti-arrow-right lb-arrow" aria-hidden="true"></i>
-  </a>
-</div>
+    .link:hover {
+      border-color: #bbb;
+      background: #fafaf8;
+      transform: translateY(-1px);
+    }
+
+    .link:active { transform: translateY(0); }
+
+    .icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 17px;
+    }
+
+    .text { flex: 1; }
+    .label { font-size: 13px; font-weight: 500; display: block; color: #1a1a1a; }
+    .sub { font-size: 11px; color: #888; display: block; margin-top: 2px; }
+    .arrow { color: #ccc; font-size: 13px; }
+
+    .ic-li { background: #0A66C2; color: #fff; }
+    .ic-gh { background: #24292e; color: #fff; }
+    .ic-em { background: #EA4335; color: #fff; }
+    .ic-pr { background: #E6F4EA; color: #1e7e34; font-size: 15px; }
+    .ic-re { background: #7b2ff7; color: #fff; font-size: 15px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="avatar">AB</div>
+    <p class="name">Amaan Bukhari</p>
+    <p class="title">IT &amp; Cybersecurity &middot; CompTIA Sec+ &middot; NJIT &rsquo;26</p>
+
+    <p class="divider">Connect</p>
+
+    <a class="link" href="https://www.linkedin.com/in/amaanbukhari/" target="_blank" rel="noopener">
+      <div class="icon ic-li"><i class="fa-brands fa-linkedin-in"></i></div>
+      <div class="text">
+        <span class="label">LinkedIn</span>
+        <span class="sub">linkedin.com/in/amaanbukhari</span>
+      </div>
+      <i class="fa-solid fa-arrow-right arrow"></i>
+    </a>
+
+    <a class="link" href="mailto:amaanjbukhari@gmail.com">
+      <div class="icon ic-em"><i class="fa-solid fa-envelope"></i></div>
+      <div class="text">
+        <span class="label">Email</span>
+        <span class="sub">amaanjbukhari@gmail.com</span>
+      </div>
+      <i class="fa-solid fa-arrow-right arrow"></i>
+    </a>
+
+    <a class="link" href="https://github.com/amaanbukhari" target="_blank" rel="noopener">
+      <div class="icon ic-gh"><i class="fa-brands fa-github"></i></div>
+      <div class="text">
+        <span class="label">GitHub</span>
+        <span class="sub">github.com/amaanbukhari</span>
+      </div>
+      <i class="fa-solid fa-arrow-right arrow"></i>
+    </a>
+
+    <p class="divider">Work &amp; Resume</p>
+
+    <a class="link" href="https://pristia.net" target="_blank" rel="noopener">
+      <div class="icon ic-pr"><i class="fa-solid fa-building"></i></div>
+      <div class="text">
+        <span class="label">Pristia Group</span>
+        <span class="sub">pristia.net</span>
+      </div>
+      <i class="fa-solid fa-arrow-right arrow"></i>
+    </a>
+
+    <a class="link" href="https://amaanbukhari.github.io/Amaan_Bukhari_Resume.pdf" target="_blank" rel="noopener">
+      <div class="icon ic-re"><i class="fa-solid fa-file-lines"></i></div>
+      <div class="text">
+        <span class="label">Resume</span>
+        <span class="sub">Download PDF</span>
+      </div>
+      <i class="fa-solid fa-arrow-right arrow"></i>
+    </a>
+  </div>
+</body>
+</html>
